@@ -11,4 +11,9 @@ describe("Number Operations", () => {
   });
 });
 
-describe("Testing with other matchers methods", () => {});
+describe("Testing with strings", () => {
+  test("the letter I should not be in Team", () => {
+    const string = "Team";
+    expect(string).not.toMatch(/a/);
+  });
+});
